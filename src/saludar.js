@@ -13,7 +13,7 @@ function saludar(nombre, genero, edad, hora, idioma) {
     
     if(edad > 30){
       prefijo = " Sr. "
-      if (genero.includes("f")) {
+      if (genero.includes("f") || genero.includes("F")) {
         prefijo = " Sra. "
       }
     }
@@ -30,7 +30,7 @@ function saludar(nombre, genero, edad, hora, idioma) {
     
     if(edad > 30){
       prefijo = " Mr. "
-      if (genero.includes("f")) {
+      if (genero.includes("f") || genero.includes("F")) {
         prefijo = " Ms. "
       }
     }
