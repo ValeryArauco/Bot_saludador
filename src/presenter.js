@@ -2,7 +2,7 @@ import saludar from "./saludar";
 
 
 const name = document.querySelector("#nombre");
-// // const second = document.querySelector("#segundo-numero");
+const gender = document.querySelector("#genero");
 // // const first1 = document.querySelector("#first-number");
 // // const second1 = document.querySelector("#second-number");
 // // const form = document.querySelector("#sumar-form");
@@ -14,8 +14,9 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
    const nombre = name.value;
+   const genero = gender.value;
 
-  div.innerHTML = "<p>" + saludar(nombre) + "</p>";
+  div.innerHTML = "<p>" + saludar(nombre, genero) + "</p>";
 
 });
 
