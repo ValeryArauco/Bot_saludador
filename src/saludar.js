@@ -1,9 +1,13 @@
-function saludar(nombre, genero) {
-  let prefijo = "Sr. "
+function saludar(nombre, genero, edad) {
+  let saludo = "Hola,"
+  let prefijo = " "
+  if(edad > 30){
+    prefijo = " Sr. "
     if (genero == "femenino") {
-      prefijo = "Sra. "
+      prefijo = " Sra. "
     }
-    return "Hola, " + prefijo + nombre ;
   }
+  return saludo + prefijo + nombre ;
+}
   
   export default saludar;
