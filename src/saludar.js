@@ -3,7 +3,7 @@ function saludar(nombre, genero, edad, hora, idioma) {
   let prefijo = " "
   if (idioma == "es"){
     if (hora < 12) {
-      saludo = "Buenos dias,"
+      saludo = "Buenos días,"
     }
     else if (hora < 18) {
       saludo = "Buenas tardes,"
